@@ -53,7 +53,15 @@ Reset ESP8266 and you should see something like the following in the serial moni
 ready
 ```
 
-Second test would be to try an AT command such as AT+GMR which should respond with
+The second test would be to try an AT command such as `AT+GMR` which should respond with
 the firmware version of your ESP8266 module.
 
+**Connecting to an access point**
+```
+AT+CWJAP="<access point ssid>","<key>"
+```
 
+**Check IP address**
+```
+AT+CIFSR
+```
